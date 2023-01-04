@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/reset.css">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Lesson Form</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header"></header>
+			<main class="page">
+				<section class="page__container">
+					<h2 class="page__title"> Проработка теории </h2>
+					<form class="page__form form" action="#" enctype="multipart/form-data" >
+						<div class="form__line">
+							<label class="form__label" title="*Обязательное поле" for="name-01">Введите Ваше имя*</label>
+							<input id="name-01" class="form__in" type="text" name="name" placeholder="Введите Ваше имя" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<label class="form__label" title="*Обязательное поле" for="age-01">Введите Ваш возраст*</label>
+							<input id="age-01" class="form__in" type="text" name="age" placeholder="Введите Ваш возраст" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<label class="form__label" title="*Обязательное поле" for="mail-01">Введите Ваш e-mail*</label>
+							<input id="mail-01" class="form__in" type="email" name="mail" placeholder="Введите Ваш e-mail" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<label class="form__label" title="*Обязательное поле" for="tel-01">Введите Ваш номер телефона*</label>
+							<input id="tel-01" class="form__in" type="tel" name="tel" placeholder="Введите Ваш номер" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<label class="form__label" title="*Обязательное поле" for="pass-01">Введите Ваш пароль*</label>
+							<input id="pass-01" class="form__in" type="password" name="pass" placeholder="Введите Ваш пароль" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="number" name="number" placeholder="Введите Вашe число" autocomplete="off" required>
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="color" name="color" value="#009900">
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="search" name="search" autocomplete="off" placeholder="Введите поисковый запрос">
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="date" name="date" required>
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="range" name="range">
+						</div>
+						<div class="form__line">
+							<input class="form__in form__in--chk" type="checkbox" name="yes" required> Я согласен
+						</div>
+						<div class="form__line">
+							<div class="form__title">Любимый напиток</div>
+							<div class="form__radio">
+								<input id="coffee" class="form__in form__in--radio" type="radio" name="drinks" value="coffee" required checked>
+								<label class="form__label" for="coffee"> Кофе</label>
+							</div>
+							<div class="form__radio">
+								<input id="tea" class="form__in form__in--radio" type="radio" name="drinks" value="tea" required>
+								<label class="form__label" for="tea"> Чай</label>
+							</div>
+							<div class="form__radio">
+								<input id="juice" class="form__in form__in--radio" type="radio" name="drinks" value="juice" required>
+								<label class="form__label" for="juice"> Сок</label>
+							</div>
+						</div>
+						<div class="form__line">
+							<input class="form__in" type="file" name="file" multiple>
+						</div>
+						<div class="form__line">
+							<label class="form__label" for="sms"> Введите сообщение: </label>
+							<textarea id="sms" class="form__text" name="sms" autocomplete="off"></textarea>
+						</div>
+						<div class="form__line">
+							<button class="form__but" type="submit"> Отправить </button>
+						</div>
+					</form>
+				</section>
+				<!--Вторая часть-->
+				<section class="page__container quetions">
+					<h2 class="quetions__title"> Практическая часть </h2>
+					<div class="quetions__block">
+						<div class="quetions__image">
+							<img src="img/illustration.svg" alt="Изображение девушки оператора колл-центра">
+						</div>
+						<div class="quetions__content">
+							<div class="quetions__titles">
+								<h2 class="quetions__add">
+									Any questions?
+								</h2>
+								<h1 class="quetions__main">
+									Drop us a line
+								</h1>
+							</div>
+							<form action="#" method="POST" class="quetions__form">
+								<div class="quetions__part info">	
+									<div class="info__main">	
+										<div class="info__line input">
+											<label for="name" class="input__label" title="*required field">First Name*</label>
+											<input id="name" type="text" class="input__in" name="name" placeholder="You first name" autocomplete="off" required>
+										</div>
+										<div class="info__line input">
+											<label for="email" class="input__label" title="*required field">Email*</label>
+											<input id="email" type="email" class="input__in" name="mail" placeholder="You working email" autocomplete="off" required>
+										</div>
+									</div>
+									<div class="info__main-1">
+										<div class="info__line input">
+											<label for="surname" class="input__label" title="*required field">Last Name*</label>
+											<input id="surname" type="text" class="input__in" name="surname" placeholder="You last name" autocomplete="off" required>
+										</div>
+										<div class="info__line input">
+											<label for="phone" class="input__label">Phone</label>
+											<input id="phone" type="tel" class="input__in" name="phone" placeholder="You phone number">
+										</div>
+									</div>
+								</div>
+								<div class="quetions__textarea area">
+									<div class="area__line">
+										<label for="area" class="area__label" title="*required field">Message*</label>
+										<textarea id="area" class="area__input" name="message" placeholder="Your message" autocomplete="off" required></textarea>
+									</div>
+								</div>
+								<div class="quetions__actions action">
+									<div class="action__input">
+										<input id="agree" type="checkbox" class="action__in" name="agree" required>
+										<label for="agree" class="action__label" title="*required field"><span class="action__text">I agree to receive communications from Createx Online School</span></label>
+									</div>
+									<div class="action__button button">
+										<button class="button__submit" type="submit">Send message</button>
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</section>
+			</main>
+			<footer class="footer"></footer>
+		</div>
+	</body>
+</html>
